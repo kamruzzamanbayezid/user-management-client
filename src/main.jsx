@@ -15,7 +15,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:6001/users')
+        loader: () => fetch('https://user-management-server-8wi41ig11-kamruzzaman-bayezids-projects.vercel.app/users')
       },
       {
         path: '/addUser',
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       {
         path: '/users/:id',
         element: <UpdateUser></UpdateUser>,
-        loader: ({ params }) => fetch(`http://localhost:6001/users/${params.id}`)
+        loader: ({ params }) => fetch(`https://user-management-server-8wi41ig11-kamruzzaman-bayezids-projects.vercel.app/users/${params.id}`)
       }
     ]
   }

@@ -30,7 +30,7 @@ const Home = () => {
                   reverseButtons: true
             }).then((result) => {
                   if (result.isConfirmed) {
-                        fetch(`http://localhost:6001/users/${id}`, {
+                        fetch(`https://user-management-server-8wi41ig11-kamruzzaman-bayezids-projects.vercel.app/users/${id}`, {
                               method: 'DELETE'
                         })
                               .then(res => res.json())

@@ -18,7 +18,7 @@ const AddUser = () => {
                   gender,
                   status
             }
-            fetch('http://localhost:6001/users', {
+            fetch('https://user-management-server-8wi41ig11-kamruzzaman-bayezids-projects.vercel.app/users', {
                   method: 'POST',
                   headers: {
                         'Content-Type': 'application/json'
